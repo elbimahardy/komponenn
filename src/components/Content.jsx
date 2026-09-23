@@ -6,7 +6,7 @@ const Content = () => {
 
   return (
     <div className="isi">
-      <img src="me-myself-and-i.jpg" alt="Foto Elbima" />
+      <img src="bimaa.jpg" alt="Foto Elbima" />
       
       <h1>Hajimemaste, watashi namaewa Elbima Dwiputra Hardy</h1>
       <p className="keterangan">Mahasiswa Pendidikan Ilmu Komputer</p>
