@@ -1,18 +1,26 @@
+import { Routes, Route } from 'react-router';
 import './App.css';
 
 import Header from './components/Header';
-import Content from './components/Content';
+import Home from './components/Home';
+import About from './components/About';
+import Kontak from './components/Kontak';
 import Footer from './components/Footer';
 
 const App = () => {
   return (
-    <div>
+    <div className="app">
       <Header />
-      <hr />
-      <Content />
+      <main className="main">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/kontak" element={<Kontak />} />
+        </Routes>
+      </main>
       <Footer />
     </div>
-  )
+  );
 };
 
 export default App;
